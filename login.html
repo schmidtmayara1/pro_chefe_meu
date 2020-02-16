@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizzaria Julubom</title> <!--título da página-->
+    <link rel="stylesheet" href="style.css"> <!--arquivo dos estilos colocar-->
+</head>
+<body>
+    <div class ="caixa_login"> <!--cria a classe caixa login-->
+        <h2>Bem-vindo</h2> <!--titulo da caixa-->
+        <div class="subtitulo"><h5>á Pizzaria Julubom</h5>
+        <!--<h5 class="subtitulo">a Pizzaria Julubom</h5>-->
+        
+        <input  class= "ph1" type="text" placeholder="Usuário" id="nome_usuario"><br><br> <!--caixa de texto onde o usuário pod escrever o id = indentificacao para caixa de texto-->
+        <input  class= "ph2" type="password" placeholder="Senha" id="senha_usuario"><br><br>
+        <button class= "button" type="botao" id="bnt_entrar" onclick="entrar()">Entrar</button> <!--funcao entrar-->
+        <button class = "link" type="botao1" id="esqueceu_senha" onclick="esqueceuSenha()">Esqueceu sua Senha</button><br><br>   
+    </div>
+    <script>
+
+        function esqueceuSenha(){
+            document.getElementById("esqueceu_senha").onclick = function(){
+                window.open("esqueceuSenha.html");
+            }
+        }
+        
+        function entrar(){
+            
+            var x = document.getElementById("nome_usuario");
+            var y = document.getElementById("senha_usuario");
+            if(x.value == "Mayara" && y.value == "123"){
+                window.open("home.html");
+                alert("Acesso Permitido");
+            }else{
+                alert("Acesso Negado");
+            }
+        }
+        
+    
+    
+    
+    
+    </script>
+    <!--pega o id do usuario e da senha e salva na variavel x e y-->
+</body>
+</html>
