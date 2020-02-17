@@ -21,7 +21,7 @@
     border-radius: 10px;
     width: 100px;
     height: 25px;
-    color: green;
+    color: black;
     background-color: green;
 }
 .link{
@@ -34,5 +34,5 @@
 .ph1,.ph2{
     color:green;
     border: 2px green solid;
-    background-color: grey;
+    
 }
